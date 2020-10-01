@@ -38,7 +38,7 @@
               id="limit"
               type="number"
               v-model.number="limit"
-              :class="{invalid: ($v.title.$dirty && !$v.title.minValue)}"
+              :class="{invalid: ($v.limit.$dirty && !$v.limit.minValue)}"
           >
           <label for="limit">Лимит</label>
           <span
