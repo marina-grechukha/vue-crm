@@ -30,7 +30,7 @@ import HomeBill from '@/components/HomeBill.vue'
 import HomeCurrency from '@/components/HomeCurrency.vue'
 
 export default {
-  name: 'Home',
+  name: 'home',
   data: () => ({
     loading: true,
     currency: null
