@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">Вход</span>
+      <span class="card-title">{{'CRM-title' | localize}} | {{'login' | localize}}</span>
       <div class="input-field">
         <input
             id="email"
@@ -52,7 +52,7 @@
 
       <p class="center">
         {{'no-account' | localize}}
-        <router-link to="/registration">{{'register' | localize}}</router-link>
+        <router-link to="/registration">{{'register' | localize}}></router-link>
       </p>
     </div>
   </form>
@@ -64,6 +64,11 @@ import messages from '@/utils/messages'
 
 export default {
   name: 'login',
+  metaInfo() {
+    return {
+      title: this.$title('login')
+    }
+  },
   data: () => ({
     email: '',
     password: ''

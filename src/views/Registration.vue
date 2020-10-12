@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">{{'register' | localize}}</span>
+      <span class="card-title">{{'CRM-title' | localize}} | {{'registration' | localize}}</span>
       <div class="input-field">
         <input
             id="email"
@@ -84,6 +84,11 @@ import { email, required, minLength } from 'vuelidate/lib/validators'
 
 export default {
   name: 'registration',
+  metaInfo() {
+    return {
+      title: this.$title('registration')
+    }
+  },
   data: () => ({
     email: '',
     password: '',

@@ -36,6 +36,11 @@ import localizeFilter from '@/filters/localize.filter'
 
 export default {
   name: 'plan',
+  metaInfo() {
+    return {
+      title: this.$title('planning')
+    }
+  },
   data: () => ({
     loading: true,
     categories: []

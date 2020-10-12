@@ -13,6 +13,7 @@
   "categories": "Категории",
   "add-category": "Добавить категорию",
   "no-categories": "Категорий пока нет.",
+  "detail": "Детали записи",
   "title": "Название",
   "limit": "Лимит",
   "min-limit": "Минимальный лимит",
@@ -53,10 +54,11 @@
   "email-invalid": "Введите корретный Email",
   "password": "Пароль",
   "enter-password": "Введите пароль",
-  "login": "Войти",
+  "login": "Вход",
   "no-account": "Нет аккаунта?",
   "has-account": "Уже есть аккаунт?",
   "register": "Зарегистрироваться",
+  "registration": "Регистрация",
   "accept-rules": "С правилами согласен",
   "logout": "Вы вышли из системы",
   "first-login": "Для начала войдите в систему",
@@ -64,5 +66,5 @@
   "wrong-password": "Неверный пароль",
   "email-in-use": "Email уже занят",
   "error": "Ошибка",
-  "CRM_Title": "Личные финансы"
+  "CRM-title": "Личные финансы"
 }
