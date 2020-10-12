@@ -13,11 +13,11 @@
         <small
           class="helper-text invalid"
           v-if="$v.email.$dirty && !$v.email.required"
-          >Поле Email не должно быть пустым</small>
+          >{{'mail-equired' | localize}}</small>
         <small
           class="helper-text invalid"
           v-else-if="$v.email.$dirty && !$v.email.email"
-          >Введите корректный Email</small>
+          >{{'mail-invalid' | localize}}</small>
       </div>
       <div class="input-field">
         <input
@@ -27,11 +27,11 @@
             :class="{invalid: ($v.password.$dirty && !$v.password.required)
             || ($v.password.$dirty && !$v.password.minLength)}"
         >
-        <label for="password">Пароль</label>
+        <label for="password">{{'password' | localize}}</label>
         <small
           class="helper-text invalid"
           v-if="$v.password.$dirty && !$v.password.required"
-          >Введите Пароль</small>
+          >{{'enter-password' | localize}}</small>
         <small
           class="helper-text invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
@@ -45,14 +45,14 @@
             class="btn waves-effect waves-light auth-submit"
             type="submit"
         >
-          Войти
+          {{'login' | localize}}
           <i class="material-icons right">send</i>
         </button>
       </div>
 
       <p class="center">
-        Нет аккаунта?
-        <router-link to="/registration">Зарегистрироваться</router-link>
+        {{'no-account' | localize}}
+        <router-link to="/registration">{{'register' | localize}}</router-link>
       </p>
     </div>
   </form>

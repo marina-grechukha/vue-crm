@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>Категории</h3>
+      <h3>{{'categories' | localize}}</h3>
     </div>
     <section>
       <Loader v-if="loading" />
@@ -15,7 +15,7 @@
           :key="categories.length + updateCount"
           @updated="updateCategories"
         />
-        <p v-else class="center">Категорий пока нет</p>
+        <p v-else class="center">{{'no-categories' | localize}}</p>
       </div>
     </section>
   </div>
@@ -43,7 +43,6 @@ export default {
   methods: {
     addNewCategory(category) {
       this.categories.push(category)
-      console.log(this.categories)
     },
     updateCategories(category) {
       const idx = this.categories.findIndex((c) => c.id === category.id)
