@@ -1,5 +1,4 @@
 # CRM система на Vue JS
----
 Создание приложения (CRM системы) для учета личных фиансов, используя технологию Vue JS.
 
 По обучающим материалам [Владилена Минина на YouTube](https://www.youtube.com/playlist?list=PLqKQF2ojwm3njNpksFCi8o-_c-9Vva_W0).
