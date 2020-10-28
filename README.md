@@ -1,24 +1,24 @@
-# vue-crm
+# CRM система на Vue JS
+---
+Создание приложения (CRM системы) для учета личных фиансов, используя технологию Vue JS.
 
-## Project setup
-```
-npm install
-```
+По обучающим материалам [Владилена Минина на YouTube](https://www.youtube.com/playlist?list=PLqKQF2ojwm3njNpksFCi8o-_c-9Vva_W0).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Основные задачи:
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Генерация и настройка приложения с помощью Vue CLI 
+- Создание разных лейаутов и подключение страниц, через lazy loading
+- Создание фильтра даты
+- Динамическая валидация страницы логина с помощью библиотеки Vuelidate
+- Создание плагина сообщений для VueJS на примере библиотеки materializecss
+- Добавление и настройка Firebase. Регистрация и авторизации в системе с помощью Firebase
+- Создание шины для обработки ошибок, используя Vuex
+- Работа с API
+- Работа с БД, env переменными, асинхронными операциями.
+- Работа с динамически изменяемыми формами во Vue
+- Создание tooltip директивы
+- Страницы с динамическими параметрами
+- Создание универсальной пагинации с помощью mixins во VueJS.
+- Графики с vue-chartjs
+- Динамическая локализация (ru/en)
+- Деплой приложения на Firebase
